@@ -1,4 +1,4 @@
-FROM registry.ci.openshift.org/openshift/release:golang-1.22 AS builder
+FROM quay-proxy.ci.openshift.org/openshift/ci:openshift_release_golang-1.22 AS builder
 WORKDIR /go/src/github.com/openshift/baremetal-runtimecfg
 COPY . .
 RUN mkdir build
